@@ -1,0 +1,28 @@
+<jboss-deployment-structure>
+    <deployment>
+   
+        <dependencies>
+            <module name="deployment.eclipse.persistence" slot="main" export="false" />
+        </dependencies>
+    </deployment>
+    <module name="deployment.eclipse.persistence">
+        <resources>
+            <resource-root path="eclipselink-2.7.7.jar" />
+        </resources>
+        <dependencies>
+            <module name="asm.asm"/>
+            <module name="javax.api"/>
+            <module name="javax.persistence.api"/>
+            <module name="javax.transaction.api"/>
+            <module name="javax.validation.api"/>
+            <module name="javax.xml.bind.api"/>
+            <module name="org.antlr"/>
+            <module name="org.apache.commons.collections"/>
+            <module name="org.dom4j"/>
+            <module name="org.javassist"/>
+            <module name="org.jboss.logging"/>
+        </dependencies>
+    </module>
+    
+    
+</jboss-deployment-structure>
